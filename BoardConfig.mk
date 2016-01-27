@@ -21,13 +21,12 @@ DEVICE_PATH := device/motorola/thea
 # Vendor Unification Init
 TARGET_UNIFIED_DEVICE := true
 TARGET_INIT_VENDOR_LIB := libinit_msm
-TARGET_LIBINIT_DEFINES_FILE := $(DEVICE_PATH)/init/init_thea.c
+TARGET_LIBINIT_DEFINES_FILE := $(DEVICE_PATH)/init/init_thea.cpp
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := thea,thea_umtsds,thea_ds,XT1072,XT1078,XT1079
 
 # Kernel
-BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/mkbootimg.mk
 TARGET_KERNEL_CONFIG := titan_defconfig
 
 # Partitions
@@ -38,9 +37,6 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 5207080960
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
-
-# Recovery
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # inherit from the proprietary version
 -include vendor/motorola/thea/BoardConfigVendor.mk
