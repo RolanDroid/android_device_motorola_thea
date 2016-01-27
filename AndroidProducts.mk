@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_thea.mk
+    $(LOCAL_DIR)/aosp_thea.mk
