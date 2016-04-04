@@ -36,7 +36,7 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1157627904
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 5207080960
 
 # Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_SYSTEM_PROP += device/motorola/thea/system.prop
 
 # inherit from the proprietary version
 -include vendor/motorola/thea/BoardConfigVendor.mk
